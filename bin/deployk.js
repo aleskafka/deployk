@@ -34,11 +34,11 @@ var module, modulePath, deployInst;
 function run()
 {
 	try {
-		modulePath = resolve.sync('deploy', {basedir: basedir});
+		modulePath = resolve.sync('deployk', {basedir: basedir});
 
 	} catch (e) {
-		console.log(chalk.red('Local deploy module not found.'));
-		console.log('Run: npm install deploy');
+		console.log(chalk.red('Local deployk module not found.'));
+		console.log('Run: npm install deployk');
 		process.exit(1);
 	}
 
@@ -48,7 +48,7 @@ function run()
 		logEvents(deployInst);
 
 	} catch (e) {
-		console.log(chalk.red('Could not load instance of deploy module.'));
+		console.log(chalk.red('Could not load instance of deployk module.'));
 		process.exit(1);
 	}
 

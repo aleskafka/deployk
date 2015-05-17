@@ -1,0 +1,63 @@
+{
+  "name": "deployk",
+  "version": "0.1.1",
+  "description": "Simple but powerful deployment tool",
+  "license": "MIT",
+  "keywords": [
+    "deploy",
+    "tool",
+    "remote synchronization"
+  ],
+  "maintainers": [
+    "Ales Kafka <ales.kafka@gmail.com>"
+  ],
+  "engines": {
+    "node": ">=0.9.0"
+  },
+  "scripts": [
+    "nodeunit"
+  ],
+  "files": [
+    "index.js",
+    "lib",
+    "bin"
+  ],
+  "bin": {
+    "deployk": "./bin/deployk.js"
+  },
+  "dependencies": {
+    "async": "^0.9.0",
+    "chalk": "^0.5.0",
+    "config-extend": "0.0.7",
+    "dateformat": "^1.0.11",
+    "deployk-utils": "^0.1.0",
+    "express": "^4.12.3",
+    "flagged-respawn": "^0.3.1",
+    "glob": "^4.3.2",
+    "interpret": "^0.3.2",
+    "minimatch": "^2.0.1",
+    "minimist": "^1.1.0",
+    "node-constants": "0.0.2",
+    "resolve": "^1.1.6",
+    "v8flags": "^1.0.8",
+    "yargs": "^3.9.0",
+    "fsevents": "^0.3.5"
+  },
+  "devDependencies": {},
+  "optionalDependencies": {
+    "fsevents": "^0.3.5"
+  },
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/aleskafka/deployk.git"
+  },
+  "author": "Ales Kafka <ales.kafka@gmail.com>",
+  "bugs": {
+    "url": "https://github.com/aleskafka/deployk/issues"
+  },
+  "homepage": "https://github.com/aleskafka/deployk"
+}
